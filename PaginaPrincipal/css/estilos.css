@@ -174,12 +174,6 @@ a span:nth-child(4){
 .section-images {
     margin: 50px 0;
     padding: 50px 0;
-    background-image: url(../img/icegif-83.gif);
-    background-color: #F6F6F6;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
 }
 .container-images {
     display: flex;
