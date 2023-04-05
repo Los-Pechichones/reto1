@@ -259,18 +259,16 @@ a span:nth-child(4){
 }
 
 #enlaceCampus{
-    margin: 10px;
+    margin: -10px;
 }
 
 #campus{
-    height: 110px;
-    width: 310px;
-    padding: 5px;
+    height: 150px;
+    width: 330px;
+    padding: 25px;
     box-shadow:
         0 0 0.1vw 0.4vw #e0f7fa92,
         0 0 0.4vw 0.6vw #00ffaaca,
         0 0 1vw 0.4vw #00ffaaca;
     border-radius: .5rem;
-    user-select: none;
-    cursor: pointer;
 }
