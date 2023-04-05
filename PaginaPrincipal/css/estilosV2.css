@@ -183,7 +183,10 @@ a span:nth-child(4){
     box-shadow: 10px 5px 10px 5px rgba(0, 0, 0, .7), -10px 5px 10px 5px rgba(0, 0, 0, .7);; 
     position: relative;
     z-index: 1;
-
+    box-shadow:
+        0 0 0.1vw 0.4vw #e0f7fa92,
+        0 0 0.4vw 0.6vw #00ffaaca,
+        0 0 1vw 0.4vw #00ffaaca;
 }
 .container-images::after {
     z-index: -1;
