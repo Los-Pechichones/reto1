@@ -110,3 +110,12 @@ particlesJS(
     "retina_detect": true
   }
 )
+
+const img1 = document.getElementById("img1"), img2 = document.getElementById("img2"), img3 = document.getElementById("img3"), img4 = document.getElementById("img4");
+const container_images = document.getElementsByClassName("container-images");
+const nombre_integrante = document.getElementById("nombre-integrante");
+
+function funNombreIntegrante(nombre) {
+  nombre_integrante.innerHTML = nombre;
+}
+
