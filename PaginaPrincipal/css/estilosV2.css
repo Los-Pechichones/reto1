@@ -14,7 +14,9 @@
 }
 
 body {
-    background-color:#000;
+    background: #112 url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg)  center no-repeat;
+    background-size:cover;
+    margin:0
 }
 
 #pechichones {
