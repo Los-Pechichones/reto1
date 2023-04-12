@@ -3,6 +3,7 @@
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 #particles-js {
@@ -65,7 +66,7 @@ h1 {
 #botones{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;;
 }
 
 a:not(#enlaceCampus){
@@ -170,7 +171,7 @@ a span:nth-child(4){
         bottom: 100%;
     }
 }
-
+/* IMAGENES EQUIPO */
 .section-images {
     margin: 25px 0;
     padding: 25px 0;
@@ -198,7 +199,7 @@ a span:nth-child(4){
     height: 100%;
     position: absolute;
     background: linear-gradient(120deg, #bebebe 30%, #f5f5f5 38%, #f5f5f5 
-    40%, #ecebebf7 48%);
+    40%, #bebebe 48%);
     opacity: .15;
     background-size: 200% 100%;
     background-position: 100% 0;
@@ -223,7 +224,22 @@ a span:nth-child(4){
       background-position: -100% 0;
     }
 }
+/*MEDIA QUERIES*/
+
 @media (min-width: 0) and (max-width: 1399px) {
+    h1{
+        font-size: 2.5rem;
+        margin-bottom: .5em;
+    }
+    #botones{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    #botones > a{
+        padding: .5em;
+    }
+    
+
     .section-images {
         margin: 25px 0;
         padding: 25px 0;
