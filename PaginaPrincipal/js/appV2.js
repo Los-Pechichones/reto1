@@ -113,9 +113,57 @@ particlesJS(
 
 const img1 = document.getElementById("img1"), img2 = document.getElementById("img2"), img3 = document.getElementById("img3"), img4 = document.getElementById("img4");
 const container_images = document.getElementsByClassName("container-images");
-const nombre_integrante = document.getElementById("nombre-integrante");
+
+function debounce(func, wait) {
+  let timeout;
+  return function executedFunction(...args) {
+    const later = () => {
+      timeout = null;
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
+};
+
+class NameIntegranteController {
+  nombre_integrante = document.getElementById("nombre-integrante");
+  escribiendo = false
+  constructor(nombre) {
+    this.nombre = nombre;
+  }
+  getNombre() {
+    return this.nombre;
+  }
+  setNombre(nombre) {
+    if (this.escribiendo) return;
+    this.escribiendo = true;
+    this.nombre = nombre;
+    this._mostrarNombre();
+  }
+
+
+  sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  async _mostrarNombre() {
+    if (this.nombre === "") this.nombre_integrante.innerHTML = "";
+    else {
+      this.nombre_integrante.innerHTML = "";
+      await Promise.all(
+        this.nombre.split("").map(async (letra, i) => {
+          await this.sleep(75 * i)
+          this.nombre_integrante.innerHTML += letra;
+        })
+      );
+    }
+    
+    this.escribiendo = false;
+  }
+}
+const nameIntegranteController = new NameIntegranteController("");
 
 function funNombreIntegrante(nombre) {
-  nombre_integrante.innerHTML = nombre;
+  nameIntegranteController.setNombre(nombre);
 }
-
