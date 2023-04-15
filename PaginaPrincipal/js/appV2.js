@@ -116,6 +116,5 @@ const container_images = document.getElementsByClassName("container-images");
 const nombre_integrante = document.getElementById("nombre-integrante");
 
 function funNombreIntegrante(nombre) {
-  nombre_integrante.innerHTML = nombre;
+  //nombre_integrante.innerHTML = nombre;
 }
-
