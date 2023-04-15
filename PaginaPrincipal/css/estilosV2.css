@@ -219,16 +219,7 @@ h1 {
     height: 100%;
     object-fit: fill;
 }
-.container-images a img:hover {
-    object-fit: cover;
-}
-.container-images a:hover {
-    object-fit: cover;
-    cursor: pointer;
-    width: 8vw;
-    opacity: 1;
-    filter: contrast(120%);
-}
+
 @keyframes load89234 {
     100% {
       background-position: -100% 0;
@@ -250,21 +241,21 @@ h1 {
     #botones > a{
         padding: .5em;
     }
-    
-
     .section-images {
         margin: 25px 0;
         padding: 25px 0;
     }
     .container-images {
         width: 100%;
-        height: 430px;
+        height: 25vh;
     }
-    .container-images > img {
-        width: 50px;
+    .container-images a{
+        height: 25vh;
     }
-    .container-images > img:hover {
-        width: 150px;
+    .container-images a img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
     }
 }
 
@@ -280,6 +271,16 @@ h1 {
     }
     #img4{
         border-radius: 0 15px 15px 0;
+    }
+    .container-images a img:hover {
+        object-fit: cover;
+    }
+    .container-images a:hover {
+        object-fit: cover;
+        cursor: pointer;
+        width: 8vw;
+        opacity: 1;
+        filter: contrast(120%);
     }
 }
 
