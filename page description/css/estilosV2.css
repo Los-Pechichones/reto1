@@ -5,7 +5,7 @@
     padding: 0.1px;
 }
 .grid-item{
-    /*border: 1px solid blue;*/
+    /* border: 1px solid blue; */
     font-size: 5px;
     text-align: center;
 }
@@ -22,14 +22,8 @@
 }
 .item3{
     grid-column: 1/3;
-    display:grid;
-    grid-template-columns: auto auto auto;
-    place-items: center;
-    text-align: center;
-    
-}
-.item4{
-    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 .a1{
     text-align: left;
@@ -41,10 +35,10 @@ object-fit: contain;
 margin: 1em auto;
 padding: 0.5em;
 }
-
 .grid-row {
+margin: 1em auto;
+/* border: 1px solid blue; */
 text-align: center;
-/*border: 1px solid blue;*/
 }
 .b1{
     background-color: #000;
@@ -59,7 +53,35 @@ text-align: center;
         0 0 1vw 0.1vw #00ffaaca;
 }
 .b2{
-    background-color: #000080;
+    background-color: #000;
+    color:white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+    font-family: orbitron;
+    box-shadow:
+        0 0 0.1vw 0.1vw #e0f7fa92,
+        0 0 0.1vw 0.1vw #00ffaaca,
+        0 0 1vw 0.1vw #00ffaaca;
+}
+.sub-item1{
+    align-self: center;
+    justify-self: end; 
+}
+.sub-item2{
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    padding: 0.1%;   
+    text-align: left;
+}
+.bu{
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+}
+.b3{
+    background-color: #000;
     color:white;
     padding: 5px 20px;
     border-radius: 20px;
@@ -71,31 +93,23 @@ text-align: center;
         0 0 1vw 0.1vw #00ffaaca;
 }
 .bu{
-    margin-left: 10px;
-}
-.b3{
-    background-color: rgb(37, 35, 35);
-    color:white;
-    padding: 5px 20px;
-    border-radius: 20px;
-    border: 1px solid white;
-    font-family: orbitron;
-    box-shadow:
-        0 0 0.1vw 0.1vw #e0f7fa92,
-        0 0 0.1vw 0.1vw #00ffaaca,
-        0 0 1vw 0.1vw #00ffaaca;
+    margin: 0.01em auto;
+    padding: 1%;
 }
 p{
     font-family: 'Courier New', Courier, monospace;
     font-size: 24px;
     color: white;
+    font-weight: 800;
 }
 h4{
     font-size: 4rem;
     text-align: center;
     font-family: orbitron;
     color: white;   
+    font-weight: 200;
 }
+
 
 
 
