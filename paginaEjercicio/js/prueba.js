@@ -39,8 +39,8 @@ function imprimirHonorario(valorPagar,cantidadA,cantidadB,cantidadC){
     let categoriaA = document.getElementById("categoria-a")
     let categoriaB = document.getElementById("categoria-b")
     let categoriaC = document.getElementById("categoria-c")
-    honorarioDocente.innerHTML = valorPagar 
-    honorarioTotal.innerHTML = valorPagar
+    honorarioDocente.innerHTML = "$"+valorPagar.toLocaleString()
+    honorarioTotal.innerHTML = "$"+valorPagar.toLocaleString()
     categoriaA.innerText = cantidadA
     categoriaB.innerText = cantidadB
     categoriaC.innerText = cantidadC
