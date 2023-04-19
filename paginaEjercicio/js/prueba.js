@@ -47,4 +47,6 @@ function imprimirHonorario(valorPagar,cantidadA,cantidadB,cantidadC){
 }
 
 let formulario = document.querySelector("#miFormulario")
+let refrescar = document.querySelector("#refresh")
 formulario.addEventListener("submit", obtenerDatos)
+refrescar.addEventListener("click", e => {location.reload()})
