@@ -1,19 +1,19 @@
-var cantidadA = 0
-var cantidadB = 0
-var cantidadC = 0
-var valorTotal = 0
-
-function obtenerDatos(){
+function obtenerDatos(event){
+    event.preventDefault()
     let nombre = document.getElementById("nombre").value
     let documento = document.getElementById("documento").value
     let horas = parseInt(document.getElementById("horas").value)
     let categoria = parseInt(document.getElementById("categoria").value)
     calcularHonorario(horas,categoria)
-
+    console.log(nombre,documento,horas,categoria)
+   
 }
 
 function calcularHonorario(horas,categoria){
     let valorHora = 0
+    let cantidadA = 0
+    let cantidadB = 0
+    let cantidadC = 0
     switch(categoria){
         case 1:
             valorHora = 25000;
@@ -29,16 +29,22 @@ function calcularHonorario(horas,categoria){
             break;
     }
     valorPagar = horas*valorHora
-    valorTotal += valorPagar
-    imprimirHonorario(valorPagar)
+    imprimirHonorario(valorPagar, cantidadA,cantidadB,cantidadC)
 
 }
 
-function imprimirHonorario(valorPagar){
+function imprimirHonorario(valorPagar,cantidadA,cantidadB,cantidadC){
     let honorarioDocente = document.getElementById("honorario-docente")
     let honorarioTotal = document.getElementById("honorario-total")
     let categoriaA = document.getElementById("categoria-a")
     let categoriaB = document.getElementById("categoria-b")
     let categoriaC = document.getElementById("categoria-c")
     honorarioDocente.innerHTML = valorPagar 
+    honorarioTotal.innerHTML = valorPagar
+    categoriaA.innerText = cantidadA
+    categoriaB.innerText = cantidadB
+    categoriaC.innerText = cantidadC
 }
+
+let formulario = document.querySelector("#miFormulario")
+formulario.addEventListener("submit", obtenerDatos)
