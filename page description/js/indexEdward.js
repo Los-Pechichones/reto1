@@ -1,12 +1,12 @@
 const data = [
     //Estudios
-    "• Bachicher Academico<br>• Técnico en Contabilidad – SENA<br>• Estudiante Data Scientist",
+    "• Bachicher Academico con profundización en pedagogía<br>• Ingeniero Mecátronico, Universidad Santo Tomas<br>• Especialización en Automatización Industrial, Universidad Santo Tomas",
     //Proyectos
-    "• Vth<br>• Domo geodésico<br>• Centrifugadora de miel<br>• Plataforma de cursos virtuales (en desarollo)",
+    "• Sistema de control de posición para actuador industrial FESTO por medio de PLC Siemens<br>• Sistema de estabilización para un cohete <br>• Analisis para identificación de tostado correcto en cafe",
     //Contacto
-    "• Correo electrónico: casgereda.1@gmail.com<br>• Teléfono: +57 3163748711<br>• Perfil de GitHub: andressantage<br>• Direccion: Esta si no<br>• Ubicación: Bucaramanga, Santander, Colombia",
+    "• Correo electrónico: eddacoam7.2@gmail.com<br>• Teléfono: +57 3222600908<br>• Perfil de GitHub: Edwarcorredor<br>• Direccion: Cra 12 #22-30n<br>• Ubicación: Bucaramanga, Santander, Colombia",
     //Plus
-    "Dentro de mi experiencia personal y laboral he trabajado más de 100 horas a la semana durante un mes algo que me agrado por las cosas que pude avanzar durante este mes y principalmente por saber que puedo aguantar mucho cuando me toque emprender o trabajar a futuro."
+    "Tengo experiencia como ingeniero de digital manufacturing en la empresa Kimberly Clark, se realizó el sistema SCADA en la nube con la ayuda del software OSI para manipulación del historial de los sensores, generando analisis y eventos para notificaciones oportunas."
 ]
 
 let btn = document.getElementsByClassName("btn");
