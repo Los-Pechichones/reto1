@@ -35,7 +35,9 @@ function calcularHonorario(horas,categoria){
 
 function imprimirHonorario(valorPagar,cantidadA,cantidadB,cantidadC){
     let honorarioDocente = document.getElementById("honorario-docente")
-
+    let a = "32323a"
+    a = +a
+    console.log(typeof a)
     let categoriaA = document.getElementById("categoria-a")
     let categoriaB = document.getElementById("categoria-b")
     let categoriaC = document.getElementById("categoria-c")
