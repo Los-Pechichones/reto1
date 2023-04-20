@@ -110,24 +110,4 @@ particlesJS(
     "retina_detect": true
   }
 )
-/* window.addEventListener("resize", () => dblclickIntegrantes)
-function dblclickIntegrantes(){
-  const a_integrantes = document.getElementsByClassName("a-integrantes");
-  for (let i = 0; i < a_integrantes.length; i++) {
-    a_integrantes[i].addEventListener("click", (e) => {
-      console.log(e.pointerType == "mouse")
-      if (e.pointerType == "mouse"){e.preventDefault()} 
-    });    
-    a_integrantes[i].addEventListener("dblclick", (e) => e.view.open(a_integrantes[i].href, "_blank"));
-  } 
-} */
-function funNombreIntegrante(nombre) {
-  //nombre_integrante.innerHTML = nombre;
-}
-
-const img1 = document.getElementById("img1"), img2 = document.getElementById("img2"), img3 = document.getElementById("img3"), img4 = document.getElementById("img4");
-const container_images = document.getElementsByClassName("container-images");
-const nombre_integrante = document.getElementById("nombre-integrante");
-
-//dblclickIntegrantes()
 
