@@ -17,7 +17,10 @@ body {
   text-align: center;
   
 }
-
+.rowk{
+  display: flex;
+  flex-direction: row;
+}
 .logo b{
   font: 400 200% "Vibur";
   color: #fee;
