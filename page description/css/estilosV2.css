@@ -6,10 +6,15 @@
     font-size: 16px;
     font-family: orbitron;;
 }
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
 body {
     background: #112 url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg) center no-repeat;
     background-size: cover;
-    margin: 0
+    margin: 0;
 }
 
 /*TITULO*/
@@ -137,7 +142,7 @@ h1 {
 }
 .container-secciones{
     margin: 3.5em;
-    padding-bottom: 3.5em;
+    padding-bottom: 1em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
