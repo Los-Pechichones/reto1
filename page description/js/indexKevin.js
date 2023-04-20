@@ -1,12 +1,10 @@
 const data = [
     //Estudios
-    "• Bachicher Academico<br>• Técnico en Contabilidad – SENA<br>• Estudiante Data Scientist",
+    "• Bachiller Academico<br>• Estudiante de ingenieria de sistemas, universidad industrial de santander<br>",
     //Proyectos
-    "• Vth<br>• Domo geodésico<br>• Centrifugadora de miel<br>• Plataforma de cursos virtuales (en desarollo)",
+    "• Robot evasor de obstaculos a partir ultrasonidos <br>• Wordle App",
     //Contacto
-    "• Correo electrónico: casgereda.1@gmail.com<br>• Teléfono: +57 3163748711<br>• Perfil de GitHub: andressantage<br>• Direccion: Esta si no<br>• Ubicación: Bucaramanga, Santander, Colombia",
-    //Plus
-    "Dentro de mi experiencia personal y laboral he trabajado más de 100 horas a la semana durante un mes algo que me agrado por las cosas que pude avanzar durante este mes y principalmente por saber que puedo aguantar mucho cuando me toque emprender o trabajar a futuro."
+    "• Correo electrónico: andreskevin2606@gmail.com<br>• Teléfono: +57 3172172768<br>• Perfil de GitHub: Kevin2606<br>",
 ]
 
 let btn = document.getElementsByClassName("btn");

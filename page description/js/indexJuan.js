@@ -5,8 +5,6 @@ const data = [
     "• Cálculo computacional de factores de intensificación SERS en nanoesferas metálicas<br>• Desarrollo de etapa temprana de biosensor para la detección de Alzheimer en sangre con nanotubos de carbono y nanopartículas de plata",
     //Contacto
     "• Correo electrónico:  juanesteban.gomezgarcia@gmail.com<br>• Teléfono: +57 3187000224<br>• Perfil de GitHub: <br>• Direccion: <br>• Ubicación: Piedecuesta, Santander, Colombia",
-    //Plus
-    "Dentro de mi experiencia personal y laboral he trabajado más de 100 horas a la semana durante un mes algo que me agrado por las cosas que pude avanzar durante este mes y principalmente por saber que puedo aguantar mucho cuando me toque emprender o trabajar a futuro."
 ]
 
 let btn = document.getElementsByClassName("btn");
