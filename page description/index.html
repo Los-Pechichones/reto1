@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,57 +9,58 @@
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="./css/estilosV2.css">    
+    <link rel="stylesheet" href="./css/estilosV2.css">
 </head>
 <body>
     <!-- ID Particles.js -->
     <div id="particles-js"></div>
     <div id="contenedor">
-        <h1 id="pechichones">Los Pechichones</h1>
+        <a href="/PaginaPrincipal/indexV2.html"><h1 id="pechichones">Los Pechichones</h1></a>
     </div>
-
-    <section class="section-images">
-        <div class="container-images">
-            <div class="grid-container">
-
-                <div class="grid-item item1">
-                    <img src="1.PNG">
+    <section class="section">
+        <div class="container">
+            <div class="container-info">
+                <div class="item1">
+                    <img src="img/foto.png">
                 </div>
-                <div class="grid-item item2">
+                <div class="item2">
                     <h4>Cesar Andres Santana Gereda</h4>
                     <p class="a1">
-                        Description: Soy un profesional creativo y apasionado con experiencia en diseño gráfico y marketing digital.
+                        Description: Soy un profesional creativo y apasionado con experiencia en diseño gráfico y
+                        marketing digital.
                     </p>
                 </div>
-                <div class="grid-item item3">
-                    <div class="sub-item1">
-                        <div class="grid-row">
-                            <button class="b1" id="b1"><h2>Estudios</h2></button>
-                        </div>
-                        <div class="grid-row">
-                            <button class="b2" id="b2"><h2>Proyectos</h2></button>
-                        </div>
-                        <div class="grid-row">
-                            <button class="b3" id="b3"><h2>Contacto</h2></button>
-                        </div>
-                    </div>
-
-                    <div id="f1" class="sub-item2">
-                        <p id="f" class="bu"> </p>
+            </div>
+            <div class="container-span">
+                <span class="span1"></span>
+                <span class="span2"></span>
+            </div>
+            <div id="container-secciones" class="container-secciones">
+                <div class="container-btn">
+                    <!--Primer acordion-->
+                    <button class="btn active-btn" id="b1">
+                        <h2>Estudios</h2>
+                    </button>
+                    <!--Segundo btn-->
+                    <button class="btn" id="b2">
+                        <h2>Proyectos</h2>
+                    </button>
+                    <!--Tercer btn-->
+                    <button class="btn" id="b3">
+                        <h2>Contacto</h2>
+                    </button>
+                </div>
+                <div class="container-text">
+                    <div class="panel" id="panel">
+                        <p id="panel-texto"></p>
                     </div>
                 </div>
 
-               
-
-                
             </div>
-                    
+
         </div>
     </section>
-    <!-- JS Particles.js -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="js/appV2.js"></script>
-    <script src="2.js"></script>
-    
+    <script src="js/index.js"></script>
 </body>
+
 </html>
