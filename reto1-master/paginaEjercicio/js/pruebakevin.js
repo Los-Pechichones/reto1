@@ -12,5 +12,4 @@ function calcularTarifaBas(){
     document.getElementById("nombreres").innerText = nombre;
     document.getElementById("categoria-a").innerText = estrato;
     document.getElementById("categoria-b").innerText = data[estrato] ? data[estrato] : "No existe estrato";
-
 }

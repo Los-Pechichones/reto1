@@ -37,20 +37,30 @@
                     <br><br>
                 </p>
             </div>
-            <div class="rowk"> <!-- Para organizar dos columnas-->
+            <div class="row"> <!-- Para organizar dos columnas-->
                 <div class="col neon"> <!--Columna para datos de entrada-->
                     <div class="login-box">
                         <h2>Datos Usuario</h2>
-                        <!--Formulario para datos de entrada-->
+                        <form id="miFormulario"> <!--Formulario para datos de entrada-->
                             <div class="user-box">
                                 <input type="text" name="nombre" required id="nombre">
-                                <label>Nombre:</label>
+                                <label>Nombre</label>
                             </div>
-                            <div class="user-box">
-                                <input type="number" name="estrato" required id="estrato">
-                                <label>Estrato:</label>
-                            </div>
-
+                            <!--<div class="user-box">
+                                <input type="number" name="estrato" required id="estrato" min="1" max="5">
+                                <label>Estrato</label>
+                            </div>-->
+                            <div>
+                                <label>Estrato</label>
+                                <select class="form-select" name="estrato" id="estrato">
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                </select> 
+                              </div>
+                        </form>
                     </div>
                     <div class="d-grid gap-2 p-3">
                         <button class="btn btn-success" onclick="calcularTarifaBas()">Enviar</button>
