@@ -1,10 +1,10 @@
 @font-face {
     font-family: missiondanger;
-    src: url(/reto1-master/campus_invasion/fuentes/mission_danger/missiondangerout.ttf);
+    src: url(/reto1/reto1-master/campus_invasion/fuentes/mission_danger/missiondangerout.ttf);
 }
 @font-face {
     font-family: doom;
-    src: url(/reto1-master/campus_invasion/fuentes/doom/Doom\ And\ Gloom.ttf);
+    src: url(/reto1/reto1-master/campus_invasion/fuentes/doom/Doom\ And\ Gloom.ttf);
 }
 *{
     font-family: missiondanger;
