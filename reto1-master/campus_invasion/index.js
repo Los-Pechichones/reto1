@@ -1,7 +1,7 @@
 import { data } from "./data.js";
 import { createScreen } from "./utils.js";
 import Escenario from "./clases/escenario.js";
-import Jugador2D  from "./clases/jugador2d.js";
+import Jugador2D from "./clases/jugador2d.js";
 import RayCasting from "./clases/raycasting.js";
 
 
@@ -14,6 +14,8 @@ const CTX3D = SCREEN3D.getContext("2d"); // Contexto del canvas 3D
 let escenario;
 let rayCasting;
 let jugador2d;
+let timeoutId;
+
 
 // Eventos de teclado
 const TECLAS = {
@@ -25,7 +27,19 @@ const TECLAS = {
     "ArrowRight": (isActive) => jugador2d.derecha(isActive)
 }
 
-document.addEventListener('keydown', (tecla) => TECLAS[tecla.key](true));
+const audio = document.getElementById("audio")
+function debounce(callback, delay, timeoutId) {
+    if(timeoutId) clearTimeout(timeoutId);
+    return setTimeout(() => callback(), delay);
+}
+
+document.addEventListener('keydown', (tecla) => {
+    TECLAS[tecla.key](true);
+    audio.play();
+    audio.volume = 0.4;
+    timeoutId = debounce(()=>audio.pause(), 5000, timeoutId);
+});
+
 document.addEventListener('keyup', (tecla) => TECLAS[tecla.key](false));
 
 // Función de renderizado

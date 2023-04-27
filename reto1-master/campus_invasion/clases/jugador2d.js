@@ -1,5 +1,6 @@
 import { drawLine, normalizarAngulo, degToRad } from "../utils.js";
 import { data } from "../data.js";
+
 export default class Jugador2D {
     constructor(ctx, escenario, CTX3D, x, y) {
         this.ctx = ctx;
@@ -19,6 +20,7 @@ export default class Jugador2D {
                 let casiillaY = parseInt(y / this.escenario.altoCuadro); */
         return this.escenario.colision(x, y);
     }
+
 
     actulizarPOS() {
         //0: no avanza, 1: avanza, -1: retrocede
@@ -49,9 +51,9 @@ export default class Jugador2D {
             data.player.y = newY;
         }
     }
-    raycast2D(){
+    raycast2D() {
         let rayAngle = data.player.angle - data.player.halfFov;
-        for (let rayCount  = 0; rayCount  < data.screen.width; rayCount ++) {
+        for (let rayCount = 0; rayCount < data.screen.width; rayCount++) {
             let ray = {
                 x: data.player.x,
                 y: data.player.y,
@@ -59,12 +61,12 @@ export default class Jugador2D {
             let rayCos = Math.cos(degToRad(rayAngle)) / data.rayCasting.precision;
             let raySin = Math.sin(degToRad(rayAngle)) / data.rayCasting.precision;
             let wall = 0;
-            while(wall == 0) {
+            while (wall == 0) {
                 ray.x += rayCos;
                 ray.y += raySin;
                 wall = data.map[Math.floor(ray.y)][Math.floor(ray.x)];
             }
-            drawLine(this.ctx, this.x, this.y, ray.x*this.ancho, ray.y*this.alto, "#ff0000");
+            drawLine(this.ctx, this.x, this.y, ray.x * this.ancho, ray.y * this.alto, "#ff0000");
             rayAngle += data.rayCasting.incrementAngle;
         }
     }
